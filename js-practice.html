@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>JS基础练习作业</title>
+</head>
+<body>
+    <h2>我的JS基础知识练习</h2>
+
+    <script>
+        // 1. 变量定义 & 变量类型
+        let myName = "你的名字";
+        let myAge = 20;
+        let isPass = true;
+        console.log("变量类型：", typeof myName, typeof myAge, typeof isPass);
+
+        // 2. 表达式（加减乘除）
+        let num1 = 15;
+        let num2 = 4;
+        let addResult = num1 + num2;
+        let multiResult = num1 * num2;
+        console.log("加法结果：", addResult, "乘法结果：", multiResult);
+
+        // 3. 流程控制（if判断 + 循环）
+        if (myAge >= 18) {
+            console.log("成年啦，可以学编程啦");
+        } else {
+            console.log("未成年也可以学编程哦");
+        }
+
+        for (let i = 1; i <= 3; i++) {
+            console.log("第" + i + "次循环");
+        }
+
+        // 4. 函数
+        function sayHello(name) {
+            return "你好呀，" + name + "！";
+        }
+        let result = sayHello(myName);
+        console.log("函数运行结果：", result);
+
+        alert("代码运行成功啦！请按F12打开浏览器控制台看结果");
+    </script>
+</body>
+</html>
